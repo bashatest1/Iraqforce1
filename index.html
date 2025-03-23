@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRAQ FORCE - نادي رياضي</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- القسم العلوي (Header) -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="شعار نادي IRAQ FORCE">
+                <h1>IRAQ FORCE</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">الرئيسية</a></li>
+                    <li><a href="#about">عن النادي</a></li>
+                    <li><a href="#register">تسجيل حساب</a></li>
+                    <li><a href="#contact">تواصلوا معنا</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- القسم الرئيسي (Hero Section) -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>مرحبًا بكم في نادي IRAQ FORCE</h2>
+            <p>انضم إلينا وكن جزءًا من عائلتنا الرياضية العراقية العريقة!</p>
+            <a href="#register" class="btn">سجل الآن</a>
+        </div>
+    </section>
+
+    <!-- قسم التسجيل -->
+    <section id="register" class="register-section">
+        <div class="container">
+            <h2>تسجيل حساب جديد</h2>
+            <form id="register-form" onsubmit="handleSubmit(event)">
+                <div class="form-group">
+                    <label for="name">الاسم الكامل:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">البريد الإلكتروني:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">كلمة المرور:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="btn">تسجيل</button>
+            </form>
+            <p id="form-message"></p>
+        </div>
+    </section>
+
+    <!-- تذييل الصفحة (Footer) -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 IRAQ FORCE. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
